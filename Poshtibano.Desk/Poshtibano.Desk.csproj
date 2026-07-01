@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<ApplicationIcon>Logo\logorev2_icon.ico</ApplicationIcon>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Logo\Instagram-Logo.png" />
+		<None Remove="Logo\logorev3.png" />
+		<None Remove="MainForm.UIManager.cs~RF3a0a21f2.TMP" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Logo\logorev2_icon.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Win32.SystemEvents" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Logo\Instagram-Logo.png" />
+		<Resource Include="Logo\logorev3.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Poshtibano.Desk.Shared\Poshtibano.Desk.Shared.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Forms\InvitationRequestForm.cs">
+		  <SubType>Form</SubType>
+		</Compile>
+		<Compile Update="Forms\InvitationForm.cs">
+		  <SubType>Form</SubType>
+		</Compile>
+		<Compile Update="Forms\MessageBoxForm.cs">
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Update="Forms\DisplayNameForm.cs">
+		  <SubType>Form</SubType>
+		</Compile>
+		<Compile Update="Properties\Resources.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Properties\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="H264SharpNative-win64.dll">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="IPHLPAPI.DLL">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="openh264-2.4.1-win64.dll">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+</Project>

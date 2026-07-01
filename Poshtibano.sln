@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poshtibano.Hub", "Poshtibano.Hub\Poshtibano.Hub.csproj", "{B8FDB9A1-482F-4E16-AF07-E61F7D521487}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poshtibano.Common", "Poshtibano.Common\Poshtibano.Common.csproj", "{1978DD92-86AF-460E-87BB-6287C47F4FDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poshtibano.Desk", "Poshtibano.Desk\Poshtibano.Desk.csproj", "{AE6BD812-61BF-EB21-22C9-E9CB5DEABAF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poshtibano.Desk.Shared", "Poshtibano.Desk.Shared\Poshtibano.Desk.Shared.csproj", "{F9280932-CAA3-FCE1-68A6-92D971A36D77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		AudioWebcam.md = AudioWebcam.md
+		Application.md = Application.md
+		HubServer.md = HubServer.md
+		FileTransferAndClipboardSharing.md = FileTransferAndClipboardSharing.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8FDB9A1-482F-4E16-AF07-E61F7D521487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8FDB9A1-482F-4E16-AF07-E61F7D521487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8FDB9A1-482F-4E16-AF07-E61F7D521487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8FDB9A1-482F-4E16-AF07-E61F7D521487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1978DD92-86AF-460E-87BB-6287C47F4FDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1978DD92-86AF-460E-87BB-6287C47F4FDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1978DD92-86AF-460E-87BB-6287C47F4FDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1978DD92-86AF-460E-87BB-6287C47F4FDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE6BD812-61BF-EB21-22C9-E9CB5DEABAF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE6BD812-61BF-EB21-22C9-E9CB5DEABAF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE6BD812-61BF-EB21-22C9-E9CB5DEABAF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE6BD812-61BF-EB21-22C9-E9CB5DEABAF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9280932-CAA3-FCE1-68A6-92D971A36D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9280932-CAA3-FCE1-68A6-92D971A36D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9280932-CAA3-FCE1-68A6-92D971A36D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9280932-CAA3-FCE1-68A6-92D971A36D77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62BD9DF8-CD8F-418F-A272-E532B26C8B00}
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal

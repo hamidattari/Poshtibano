@@ -1,0 +1,193 @@
+﻿namespace Poshtibano.Desk.Forms
+{
+    partial class DisplayNameForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        private Panel panelHeader;
+        private Label labelTitle;
+        private Button buttonClose;
+        private Button buttonMinimize;
+
+        private TextBox textBoxDisplayName;
+        private Button buttonOK;
+        private Label labelInfo;
+
+        private Panel panelTextBox;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            panelHeader = new Panel();
+            labelTitle = new Label();
+            buttonClose = new Button();
+            buttonMinimize = new Button();
+            textBoxDisplayName = new TextBox();
+            panelTextBox = new Panel();
+            buttonOK = new Button();
+            labelInfo = new Label();
+            panelHeader.SuspendLayout();
+            SuspendLayout();
+            // 
+            // panelHeader
+            // 
+            panelHeader.BackColor = Color.FromArgb(255, 128, 0);
+            panelHeader.Controls.Add(labelTitle);
+            panelHeader.Controls.Add(buttonClose);
+            panelHeader.Controls.Add(buttonMinimize);
+            panelHeader.Dock = DockStyle.Top;
+            panelHeader.Location = new Point(0, 0);
+            panelHeader.Margin = new Padding(0);
+            panelHeader.Name = "panelHeader";
+            panelHeader.Size = new Size(363, 50);
+            panelHeader.TabIndex = 4;
+            panelHeader.MouseDown += Header_MouseDown;
+            // 
+            // labelTitle
+            // 
+            labelTitle.AutoSize = true;
+            labelTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            labelTitle.ForeColor = Color.White;
+            labelTitle.Location = new Point(20, 12);
+            labelTitle.Name = "labelTitle";
+            labelTitle.Size = new Size(140, 28);
+            labelTitle.TabIndex = 0;
+            labelTitle.Text = "👨 انتخاب اسم";
+            labelTitle.MouseDown += Header_MouseDown;
+            // 
+            // buttonClose
+            // 
+            buttonClose.Anchor = AnchorStyles.None;
+            buttonClose.BackColor = Color.FromArgb(255, 128, 0);
+            buttonClose.FlatAppearance.BorderSize = 0;
+            buttonClose.FlatStyle = FlatStyle.Flat;
+            buttonClose.Font = new Font("Segoe UI", 9F);
+            buttonClose.ForeColor = Color.White;
+            buttonClose.Location = new Point(314, 0);
+            buttonClose.Name = "buttonClose";
+            buttonClose.Size = new Size(50, 50);
+            buttonClose.TabIndex = 1;
+            buttonClose.Text = "✕";
+            buttonClose.UseVisualStyleBackColor = false;
+            buttonClose.Click += ButtonClose_Click;
+            // 
+            // buttonMinimize
+            // 
+            buttonMinimize.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            buttonMinimize.BackColor = Color.FromArgb(255, 128, 0);
+            buttonMinimize.FlatAppearance.BorderSize = 0;
+            buttonMinimize.FlatStyle = FlatStyle.Flat;
+            buttonMinimize.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            buttonMinimize.ForeColor = Color.White;
+            buttonMinimize.Location = new Point(262, 0);
+            buttonMinimize.Name = "buttonMinimize";
+            buttonMinimize.Size = new Size(50, 50);
+            buttonMinimize.TabIndex = 2;
+            buttonMinimize.Text = "—";
+            buttonMinimize.UseVisualStyleBackColor = false;
+            buttonMinimize.Visible = false;
+            buttonMinimize.Click += ButtonMinimize_Click;
+            // 
+            // textBoxDisplayName
+            // 
+            textBoxDisplayName.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxDisplayName.BackColor = Color.White;
+            textBoxDisplayName.BorderStyle = BorderStyle.None;
+            textBoxDisplayName.Font = new Font("Segoe UI", 12F);
+            textBoxDisplayName.ForeColor = Color.FromArgb(50, 50, 50);
+            textBoxDisplayName.Location = new Point(57, 98);
+            textBoxDisplayName.Name = "textBoxDisplayName";
+            textBoxDisplayName.ScrollBars = ScrollBars.Vertical;
+            textBoxDisplayName.Size = new Size(235, 27);
+            textBoxDisplayName.TabIndex = 0;
+            textBoxDisplayName.TextAlign = HorizontalAlignment.Center;
+            // 
+            // panelTextBox
+            // 
+            panelTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panelTextBox.BackColor = Color.White;
+            panelTextBox.BorderStyle = BorderStyle.FixedSingle;
+            panelTextBox.Location = new Point(20, 95);
+            panelTextBox.Name = "panelTextBox";
+            panelTextBox.Size = new Size(300, 150);
+            panelTextBox.TabIndex = 0;
+            // 
+            // buttonOK
+            // 
+            buttonOK.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            buttonOK.BackColor = Color.FromArgb(255, 128, 0);
+            buttonOK.Cursor = Cursors.Hand;
+            buttonOK.DialogResult = DialogResult.OK;
+            buttonOK.FlatAppearance.BorderSize = 0;
+            buttonOK.FlatStyle = FlatStyle.Flat;
+            buttonOK.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            buttonOK.ForeColor = Color.White;
+            buttonOK.Location = new Point(115, 140);
+            buttonOK.Name = "buttonOK";
+            buttonOK.Size = new Size(120, 40);
+            buttonOK.TabIndex = 2;
+            buttonOK.Text = "✓ انتخاب";
+            buttonOK.UseVisualStyleBackColor = false;
+            buttonOK.Click += ButtonOK_Click;
+            buttonOK.MouseEnter += ButtonOK_MouseEnter;
+            buttonOK.MouseLeave += ButtonOK_MouseLeave;
+            // 
+            // labelInfo
+            // 
+            labelInfo.AutoSize = true;
+            labelInfo.Font = new Font("Segoe UI", 9F);
+            labelInfo.ForeColor = Color.FromArgb(100, 100, 100);
+            labelInfo.Location = new Point(41, 65);
+            labelInfo.Margin = new Padding(20, 15, 20, 10);
+            labelInfo.Name = "labelInfo";
+            labelInfo.Size = new Size(266, 20);
+            labelInfo.TabIndex = 1;
+            labelInfo.Text = "اسم خود رابرای نمایش در فرم انتخاب کنید";
+            // 
+            // DisplayNameForm
+            // 
+            AcceptButton = buttonOK;
+            BackColor = Color.FromArgb(245, 246, 250);
+            ClientSize = new Size(363, 204);
+            Controls.Add(textBoxDisplayName);
+            Controls.Add(labelInfo);
+            Controls.Add(buttonOK);
+            Controls.Add(panelHeader);
+            DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.None;
+            MinimizeBox = false;
+            Name = "DisplayNameForm";
+            ShowInTaskbar = false;
+            SizeGripStyle = SizeGripStyle.Hide;
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "ویرایش پیام";
+            panelHeader.ResumeLayout(false);
+            panelHeader.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+    }
+}

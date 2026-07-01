@@ -1,0 +1,11 @@
+// -> for TURN server download and install https://eturnal.net/download/windows/
+// -> in config file add below lines
+//  secret: "x9kJ2mPqW7zT3rY8nL5vF6bC4dH0aQ2"
+//  credentials:
+//    test: test
+//    relay_ipv4_addr: "146.19.130.50"
+// -> Run in server these commands
+//New-NetFirewallRule -DisplayName "eturnal TURN" -Direction Inbound -Protocol UDP -LocalPort 3478,49152-65535 -Action Allow
+//New-NetFirewallRule -DisplayName "eturnal TURN TCP" -Direction Inbound -Protocol TCP -LocalPort 3478 -Action Allow
+// -----> Check "turn:<ServerIP>:3478?transport=udp" in https://webrtc.github.io/samples/src/content/peerconnection/trickle-ice/
+// -----> Check "146.19.130.50:3478 test:test" in https://www.metered.ca/turn-server-testing 
